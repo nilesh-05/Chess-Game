@@ -1,0 +1,35 @@
+#grid{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cell_row{
+    display: flex;
+    flex-direction: column;
+}
+
+.cell_col{
+    /* border: 2px solid grey; */
+    margin: 1px;
+    border-radius: 5px;
+    width: 65px;
+    height: 65px;
+    background-color:lightgray;
+}
+
+.cell_col:hover{
+    background-color: black;
+}
+
+.cell_row_odd div:nth-child(even){
+    background-color:black;
+}
+
+.cell_row_even div:nth-child(odd){
+    background-color: black;
+}
+
