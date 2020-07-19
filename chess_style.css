@@ -18,18 +18,23 @@
     border-radius: 5px;
     width: 65px;
     height: 65px;
-    background-color:lightgray;
+    background-color:rgb(227, 193, 160);
 }
 
-.cell_col:hover{
-    background-color: black;
-}
 
 .cell_row_odd div:nth-child(even){
-    background-color:black;
+    background-color:rgb(184, 139, 74);
 }
 
 .cell_row_even div:nth-child(odd){
-    background-color: black;
+    background-color: rgb(184, 139, 74);
 }
-
+#grid{
+	border: 15px solid #8b3103;
+}
+.cell_row_odd .cell_col:hover{
+	background-color: lightblue;
+}
+.cell_row_even .cell_col:hover{
+	background-color: lightblue;
+}
